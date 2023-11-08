@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
     <title>quiztest</title>
     <style>
@@ -10,20 +10,36 @@
 </head>
 <body>
 <div id="startQuiz">
-    <h1>
-        uitleg quiz
+
+    <h1 style="text-align: center; font-size: 70px;">
+        Calaminator
     </h1>
-    <button id="start">begin</button>
+    <p style="text-align: center;">
+        Hey! Fijn dat je de tijd neemt om deze test te maken. In deze test krijg je informatie over hoe je met
+        calamiteiten moet<br> omgaan en kun je ook voor jezelf zien hoe jouw kennis ervoor staat. Alvast succes😊
+    </p>
+    <button id="start" style="font-size: 40px; padding: 15px; margin-left: 45rem; margin-top: 90px;">begin</button>
 </div>
 
 <div id="vraag_1" class="hidden">
-    vraag 1<br>
-    <button id="volgende">volgende</button>
+    <h2 style="font-size: 40px;"> Wat moet je doen bij een calamiteit?</h2><br>
+<p style="font-size: 30px;">
+    <input type="radio" id="antwoord1" name="antwoorden" value="optie1">
+    <label for="antwoord1">Optie 1</label><br>
+
+    <input type="radio" id="antwoord2" name="antwoorden" value="optie2">
+    <label for="antwoord2">Optie 2</label> <br><br>
+</p>
+
+    <button id="volgende" style="font-size: 35px;">volgende</button>
 </div>
 
 <div id="antwoord_1" class="hidden">
-    antwoord 1<br>
-    <button id="volgende2">volgende</button>
+    <h3 style="font-size: 40px;">Advies </h3>
+    <p style="font-size: 30px;">goed of fout...</p>
+
+        <br>
+    <button id="volgende2" style="font-size: 35px;">volgende</button>
 </div>
 
 <script>
