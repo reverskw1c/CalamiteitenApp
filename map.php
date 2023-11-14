@@ -1,5 +1,4 @@
 <?php
-
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -47,55 +46,52 @@
             cursor: pointer;
         }
 
-        .next-button {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
-
-        .finish-button {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
-
-
         #button8, #button10, #button12 {
             position: relative;
             top: 342px;
             margin-left: 50px;
         }
 
-        #button2, #button4, #button6 {
+        #button2, #button4, #button6{
             position: relative;
             top: 330px;
             margin-left: 50px;
         }
 
-        #button1, #button3, #button5, #button7, #button9, #button11 {
+        #button1, #button3, #button5, #button7, #button9, #button11{
             margin-left: 140px;
             position: relative;
             top: 105px;
         }
 
-        #newWizard {
-            display: flex;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.7);
-            justify-content: center;
-            align-items: center;
-        }
 
     </style>
 </head>
 <body>
-<img src="images/Gif1.gif" alt="button1" class="button1 buttons" id="button1">
+
+
+
+<!--  Introductiewizard-->
+<div class="wizard-container" id="introductieWizard">
+    <div class="wizard-content">
+        <h2>Introductiewizard</h2>
+        <div>
+            <p>Slide 1 Content</p>
+            <button class="next-button" id="next1">Volgende</button>
+        </div>
+        <div>
+            <p>Slide 2 Content</p>
+            <button class="next-button" id="next2">Volgende</button>
+        </div>
+        <div>
+            <span class="close-button" id="closeIntroductieWizard">X</span>
+            <p>Slide 3 Content</p>
+        </div>
+    </div>
+</div>
+
+
+<img src="images/Gif1.gif"  alt="button1" class="button1 buttons" id="button1">
 
 <img src="images/Gif1.gif" alt="button2" class="button2 buttons" id="button2">
 
@@ -120,28 +116,118 @@
 <img src="images/Gif1.gif" alt="button12" class="button12 buttons" id="button12">
 
 
-<!-- New Wizard-->
-<div class="wizard-container" id="newWizard">
-    <div class="wizard-content">
-        <h2>New Wizard</h2>
-        <div>
-            <p>Slide 1 Content</p>
-            <button class="next-button" id="next1">Next</button>
-        </div>
-        <div>
-            <p>Slide 2 Content</p>
-            <button class="next-button" id="next2">Next</button>
-        </div>
-        <div>
-            <span class="close-button" id="closeNewWizard">X</span>
-            <p>Slide 3 Content</p>
-            <button id="finishButton" class="finish-button">Finish</button>
-        </div>
-    </div>
-</div>
+
+
+
 
 <!-- Wizard-vensters -->
 
+<div class="wizard-container" id="wizard1">
+    <div class="wizard-content">
+        <span class="close-button" id="close1">X</span>
+        <h2>Wizard 1</h2>
+        <p>Dit is de inhoud van wizard 1.</p>
+    </div>
+</div>
+
+<div class="wizard-container" id="wizard2">
+    <div class="wizard-content">
+        <span class="close-button" id="close2">X</span>
+        <h2>Wizard 2</h2>
+        <p>Dit is de inhoud van wizard 2.</p>
+    </div>
+</div>
+
+
+<div class="wizard-container" id="wizard3">
+    <div class="wizard-content">
+        <span class="close-button" id="close3">X</span>
+        <h2>Wizard 3</h2>
+        <p>Dit is de inhoud van wizard 3.</p>
+    </div>
+</div>
+
+
+
+<div class="wizard-container" id="wizard4">
+    <div class="wizard-content">
+        <span class="close-button" id="close4">X</span>
+        <h2>Wizard 4</h2>
+        <p>Dit is de inhoud van wizard 4.</p>
+    </div>
+</div>
+
+
+<div class="wizard-container" id="wizard5">
+    <div class="wizard-content">
+        <span class="close-button" id="close5">X</span>
+        <h2>Wizard 5</h2>
+        <p>Dit is de inhoud van wizard 5.</p>
+    </div>
+</div>
+
+
+<div class="wizard-container" id="wizard6">
+    <div class="wizard-content">
+        <span class="close-button" id="close6">X</span>
+        <h2>Wizard 6</h2>
+        <p>Dit is de inhoud van wizard 6.</p>
+    </div>
+</div>
+
+<div class="wizard-container" id="wizard7">
+    <div class="wizard-content">
+        <span class="close-button" id="close7">X</span>
+        <h2>Wizard 7</h2>
+        <p>Dit is de inhoud van wizard 7.</p>
+    </div>
+</div>
+
+
+<div class="wizard-container" id="wizard8">
+    <div class="wizard-content">
+        <span class="close-button" id="close8">X</span>
+        <h2>Wizard 8</h2>
+        <p>Dit is de inhoud van wizard 8.</p>
+    </div>
+</div>
+
+
+
+<div class="wizard-container" id="wizard9">
+    <div class="wizard-content">
+        <span class="close-button" id="close9">X</span>
+        <h2>Wizard 9</h2>
+        <p>Dit is de inhoud van wizard 9.</p>
+    </div>
+</div>
+
+
+<div class="wizard-container" id="wizard10">
+    <div class="wizard-content">
+        <span class="close-button" id="close10">X</span>
+        <h2>Wizard 10</h2>
+        <p>Dit is de inhoud van wizard 10.</p>
+    </div>
+</div>
+
+
+<div class="wizard-container" id="wizard11">
+    <div class="wizard-content">
+        <span class="close-button" id="close11">X</span>
+        <h2>Wizard 11</h2>
+        <p>Dit is de inhoud van wizard 11.</p>
+    </div>
+</div>
+
+
+<div class="wizard-container" id="wizard12">
+    <div class="wizard-content">
+        <span class="close-button" id="close12">X</span>
+        <h2>Wizard 12</h2>
+        <p>Dit is de inhoud van wizard 12.</p>
+    </div>
+</div>
 
 <script>
     // Function to open the wizard window
@@ -154,23 +240,18 @@
         document.getElementById(wizardId).style.display = "none";
     }
 
-    // Function to move to the next slide
-    function nextSlide(currentSlideId, nextSlideId) {
-        document.getElementById(currentSlideId).classList.remove('active');
-        document.getElementById(nextSlideId).classList.add('active');
-    }
-
+    // Add click event listeners for all buttons
     for (let i = 1; i <= 12; i++) {
         const buttonId = "button" + i;
         const wizardId = "wizard" + i;
 
         // Open the wizard when the button is clicked
-        document.getElementById(buttonId).addEventListener("click", function () {
+        document.getElementById(buttonId).addEventListener("click", function() {
             openWizard(wizardId);
         });
 
         // Close the wizard when the close button is clicked
-        document.getElementById("close" + i).addEventListener("click", function () {
+        document.getElementById("close" + i).addEventListener("click", function() {
             closeWizard(wizardId);
         });
     }
