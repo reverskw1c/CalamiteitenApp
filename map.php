@@ -120,7 +120,7 @@
 <img src="images/Gif1.gif" alt="button12" class="button12 buttons" id="button12">
 
 
-<!-- New Wizard with Three Slides -->
+<!-- New Wizard-->
 <div class="wizard-container" id="newWizard">
     <div class="wizard-content">
         <h2>New Wizard</h2>
