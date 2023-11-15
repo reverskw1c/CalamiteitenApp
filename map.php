@@ -67,7 +67,7 @@ include("includes/footer.php");
 
 
         #introductieBox{
-            position: absolute;
+            position: fixed;
             margin: 50%;
             transform: translate(-50%, -50%); 
             width: 50%;
