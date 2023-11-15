@@ -20,14 +20,48 @@ $questionsArray = [
     // Add more questions as needed
 ];
 $answerArray = [
-    ["Test antwoord 1"],
-    ["Test antwoord 2"],
-    ["Test antwoord 3"],
-    ["Test antwoord 4"],
+    "Test antwoord 1",
+    "Test antwoord 2",
+    "Test antwoord 3",
+    "Test antwoord 4",
     // Add more answers as needed
 ];
+
+// Combine questions and answers into a single array
+$combinedArray = [];
+foreach ($questionsArray as $key => $question) {
+    $combinedArray[] = ["question" => $question, "answer" => $answerArray[$key]];
+}
+
+// Shuffle the combined array
+fisherYatesShuffle($combinedArray);
+
+// Separate the shuffled array back into questions and answers
+$shuffledQuestionsArray = [];
+$shuffledAnswerArray = [];
+foreach ($combinedArray as $item) {
+    $shuffledQuestionsArray[] = $item["question"];
+    $shuffledAnswerArray[] = $item["answer"];
+}
+
+// Set the shuffled arrays
+$questionsArray = $shuffledQuestionsArray;
+$answerArray = $shuffledAnswerArray;
+
 $currentQuestionIndex = 0;
 $userAnswers = [];
+
+// Shuffle the questions
+function fisherYatesShuffle(&$array)
+{
+    $count = count($array);
+    for ($i = $count - 1; $i > 0; $i--) {
+        $j = mt_rand(0, $i);
+        $temp = $array[$i];
+        $array[$i] = $array[$j];
+        $array[$j] = $temp;
+    }
+}
 ?>
 
 <div id="startQuiz">
@@ -42,6 +76,8 @@ $userAnswers = [];
     </p>
     <button id="start">begin</button>
 </div>
+
+<div id="questions" class="hidden"></div>
 
 <div id="questions" class="hidden"></div>
 
