@@ -1,11 +1,7 @@
 <?php 
 include ("initialize.php");  
 ?>
-
-<!DOCTYPE html>
-<html lang="nl">  
-        <html>
-            <head> 
+            <body> 
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width= device-width, initial-scale-1"/>  
                 <title>Navigatiemenu</title>
@@ -21,12 +17,13 @@ include ("initialize.php");
 
                 <!-- Navigatie buttons --> 
                 <nav class="navbar p-2 navbar-expand-lg navbar-kw1c border-bottom border-secondary">
-                    <ul><a href="<?php echo WWW_ROOT . '/map.php'; ?>" class="text-light fs-4">Home</a></ul>
-                    <ul><a href="<?php echo WWW_ROOT . '/quiztest.php'; ?>" class="text-light fs-4">Quiz</a></ul>
-                    <ul><a href="<?php echo WWW_ROOT . '/makers.php'; ?>" class="text-light fs-4">Makers</a></ul>
+                    <ul>
+                        <li><a href="<?php echo WWW_ROOT . '/map.php'; ?>" class="text-light fs-4">Home</a></li> 
+                        <li><a href="<?php echo WWW_ROOT . '/quiztest.php'; ?>" class="text-light fs-4">Quiz</a></li>
+                        <li><a href="<?php echo WWW_ROOT . '/makers.php'; ?>" class="text-light fs-4">Makers</a></li>
+                    </ul>
                     
                 <!-- Meldknop -->  
                     <ul><a href="<?php echo WWW_ROOT . '/'; ?>" class="text-light fs-2 btn btn-danger">!</a></ul>   
                 </nav>
-            </head>
-        </html> 
+       
