@@ -20,7 +20,7 @@ include ("initialize.php");
                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
                 <!-- Navigatie buttons --> 
-                <nav class="navbar p-3 navbar-expand-lg navbar-kw1c border-bottom border-secondary">
+                <nav class="navbar p-2 navbar-expand-lg navbar-kw1c border-bottom border-secondary">
                     <ul><a href="<?php echo WWW_ROOT . '/map.php'; ?>" class="text-light fs-4">Home</a></ul>
                     <ul><a href="<?php echo WWW_ROOT . '/quiztest.php'; ?>" class="text-light fs-4">Quiz</a></ul>
                     <ul><a href="<?php echo WWW_ROOT . '/makers.php'; ?>" class="text-light fs-4">Makers</a></ul>
