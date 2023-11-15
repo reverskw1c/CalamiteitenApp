@@ -21,9 +21,9 @@ include ("initialize.php");
                         <li><a href="<?php echo WWW_ROOT . '/map.php'; ?>" class="text-light fs-4">Home</a></li> 
                         <li><a href="<?php echo WWW_ROOT . '/quiztest.php'; ?>" class="text-light fs-4">Quiz</a></li>
                         <li><a href="<?php echo WWW_ROOT . '/makers.php'; ?>" class="text-light fs-4">Makers</a></li>
-                    </ul>
-                    
-                <!-- Meldknop -->  
-                    <ul><a href="<?php echo WWW_ROOT . '/'; ?>" class="text-light fs-2 btn btn-danger">!</a></ul>   
+                        
+                <!-- Meldknop --> 
+                        <li><a href="<?php echo WWW_ROOT . '/'; ?>" class="text-light fs-2 btn btn-danger">!</a></li>  
+                    </ul> 
                 </nav>
        
