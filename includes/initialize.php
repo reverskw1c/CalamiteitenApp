@@ -6,7 +6,7 @@
     $doc_root = $_SERVER['SERVER_NAME']; 
     
     /*haalt dynamisch rootlocatie + project folder op met $doc_root. */  
-    define("WWW_ROOT", $_SERVER['SERVER_NAME']); 
+    define("WWW_ROOT", $doc_root); 
 
     require_once('functions.php'); 
 
