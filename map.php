@@ -1,6 +1,6 @@
 <?php
-include("includes/header.php");  
-include("includes/footer.php"); 
+include("includes/header.php");
+include("includes/footer.php");
 ?>
 <!DOCTYPE html>
 <html lang="nl">
@@ -8,17 +8,23 @@ include("includes/footer.php");
     <title>Map</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            overflow: scroll;
             display: grid;
-            gap: 10px;
-            background-image: url("images/flat.png");
+            gap: 37px;
+            background-image: url(images/betere_flatgebouw.png);
             background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
+            background-attachment: scroll;
+            background-size: 100% auto;
         }
 
         .buttons {
-            width: 270px;
-            margin: 10px;
+            width: 120px;
+        }
+
+        .button12{
+        margin-bottom: ;
         }
 
         .wizard-container {
@@ -27,8 +33,6 @@ include("includes/footer.php");
             top: 0;
             left: 0;
             right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.7);
             justify-content: center;
             align-items: center;
         }
@@ -47,38 +51,20 @@ include("includes/footer.php");
             cursor: pointer;
         }
 
-        #button8, #button10, #button12 {
-            position: relative;
-            top: 342px;
-            margin-left: 50px;
-        }
-
-        #button2, #button4, #button6{
-            position: relative;
-            top: 330px;
-            margin-left: 50px;
-        }
-
-        #button1, #button3, #button5, #button7, #button9, #button11{
-            margin-left: 140px;
-            position: relative;
-            top: 105px;
-        }
-
 
         #introductieBox{
             position: fixed;
             margin: 50%;
-            transform: translate(-50%, -50%); 
+            transform: translate(-50%, -50%);
             width: 50%;
-            height: 10%; 
+            height: 10%;
             background: #F9E7E7;
-            border-radius: 10px;  
+            border-radius: 10px;
         }
 
         .close-button{
-            width: 10%; 
-            float: inline-end; 
+            width: 10%;
+            float: inline-end;
         }
     </style>
 </head>
@@ -86,33 +72,13 @@ include("includes/footer.php");
 
 
 
-<!--  Introductiewizard-->
-<!-- <div class="wizard-container" id="introductieWizard">
-    <div class="wizard-content">
-        <h2>Introductiewizard</h2>
-        <div>
-            <p>Slide 1 Content</p>
-            <button class="next-button" id="next1">Volgende</button>
-        </div>
-        <div>
-            <p>Slide 2 Content</p>
-            <button class="next-button" id="next2">Volgende</button>
-        </div>
-        <div>
-            <span class="close-button" id="closeIntroductieWizard">X</span>
-            <p>Slide 3 Content</p>
-        </div>
-    </div>
-</div>
-    --> 
-<!-- Introductiewizard --> 
-    <div id="introductieBox"> 
-        <div class="titeltekst"> 
+<!-- Introductiewizard -->
+<div id="introductieBox">
+    <div class="titeltekst">
         <img class="close-button img-fluid d-flex" src= "<?php echo WWW_ROOT . '/images/close.png'?>"  onclick="closeModel()">
-            <h2>Dit is een test<h2>
-        </div> 
-        <p>Klik om te slepen</p>
+        <h2>Dit is een test<h2>
     </div>
+    <p>Klik om te slepen</p>
 </div>
 
 
@@ -283,10 +249,10 @@ include("includes/footer.php");
 
     // Sluit de wizard met de sluitknop
 
-    let introductieBox = document.getElementById("introductieBox"); 
+    let introductieBox = document.getElementById("introductieBox");
 
     function closeModel(){
-        introductieBox.style.display = "none"; 
+        introductieBox.style.display = "none";
     }
 
 
