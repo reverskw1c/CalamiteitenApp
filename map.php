@@ -96,12 +96,7 @@ include("includes/footer.php");
     <p>Klik om te slepen</p>
 </div>
 
-
-
-
-
-
-
+<!--Flat als achtergrond en buttons-->
 <div class="flatgebouw">
 
     <img src="images/Gif1.gif"  alt="button1" class="button1 buttons" id="button1">
