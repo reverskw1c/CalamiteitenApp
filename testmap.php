@@ -12,23 +12,21 @@ include("includes/footer.php");
             padding: 0;
             overflow: scroll;
             display: grid;
-            gap: 10px;
-            /*background-image: url(images/betere_flatgebouw.png);*/
-            /*background-repeat: no-repeat;*/
-            /*background-attachment: scroll;*/
-            /*background-size: 100% auto;*/
+            gap: 37px;
+            background-image: url(images/betere_flatgebouw.png);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-size: 100% auto;
         }
 
         .buttons {
             width: 120px;
-            display: block;
-            margin-bottom: 10px;
-            padding: 40px;
-
-            /* Nieuwe toevoeging: */
-            z-index: 2;
+            /*margin-left: 72px;*/
         }
 
+        .button11{
+
+        }
 
         .wizard-container {
             display: none;
@@ -69,21 +67,9 @@ include("includes/footer.php");
             width: 10%;
             float: inline-end;
         }
-
-
-
-        .flatgebouw{
-            background-image: url("images/betere_flatgebouw.png");
-            background-size: cover;  /* of background-size: contain; afhankelijk van het gewenste effect */
-            background-repeat: no-repeat;
-            width: 100vw;
-           max-height: 100%;
-        }
-
     </style>
 </head>
 <body>
-
 
 
 
@@ -96,33 +82,35 @@ include("includes/footer.php");
     <p>Klik om te slepen</p>
 </div>
 
-<!--Flat als achtergrond en buttons-->
-<div class="flatgebouw">
 
-    <img src="images/Gif1.gif"  alt="button1" class="button1 buttons" id="button1">
 
-    <img src="images/Gif1.gif" alt="button2" class="button2 buttons" id="button2">
 
-    <img src="images/Gif1.gif" alt="button3" class="button3 buttons" id="button3">
+<img src="images/Gif1.gif"  alt="button1" class="button1 buttons" id="button1">
 
-    <img src="images/Gif1.gif" alt="button4" class="button4 buttons" id="button4">
+<img src="images/Gif1.gif" alt="button2" class="button2 buttons" id="button2">
 
-    <img src="images/Gif1.gif" alt="button5" class="button5 buttons" id="button5">
+<img src="images/Gif1.gif" alt="button3" class="button3 buttons" id="button3">
 
-    <img src="images/Gif1.gif" alt="button6" class="button6 buttons" id="button6">
+<img src="images/Gif1.gif" alt="button4" class="button4 buttons" id="button4">
 
-    <img src="images/Gif1.gif" alt="button7" class="button7 buttons" id="button7">
+<img src="images/Gif1.gif" alt="button5" class="button5 buttons" id="button5">
 
-    <img src="images/Gif1.gif" alt="button8" class="button8 buttons" id="button8">
+<img src="images/Gif1.gif" alt="button6" class="button6 buttons" id="button6">
 
-    <img src="images/Gif1.gif" alt="button9" class="button9 buttons" id="button9">
+<img src="images/Gif1.gif" alt="button7" class="button7 buttons" id="button7">
 
-    <img src="images/Gif1.gif" alt="button10" class="button10 buttons" id="button10">
+<img src="images/Gif1.gif" alt="button8" class="button8 buttons" id="button8">
 
-    <img src="images/Gif1.gif" alt="button11" class="button11 buttons" id="button11">
+<img src="images/Gif1.gif" alt="button9" class="button9 buttons" id="button9">
 
-    <img src="images/Gif1.gif" alt="button12" class="button12 buttons" id="button12">
-</div>
+<img src="images/Gif1.gif" alt="button10" class="button10 buttons" id="button10">
+
+<img src="images/Gif1.gif" alt="button11" class="button11 buttons" id="button11">
+
+<img src="images/Gif1.gif" alt="button12" class="button12 buttons" id="button12">
+
+
+
 
 <!-- Wizard-vensters -->
 
