@@ -1,0 +1,454 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* container van alle buttons */
+.buttons-container{
+    display: flex;
+    position: relative;
+}
+#homeMobiel
+{
+display: none;
+}
+
+
+.animated-gif {
+    transition: transform 0.5s ease; /* Voeg een overgangseffect toe op de grootte */
+    cursor: pointer; /* Maak de cursor een wijzer wanneer erop wordt geklikt */
+    transform: scale(2); /* Tweemaal zo groot, standaard geanimeerd */
+    filter: brightness(0) saturate(100%) invert(75%) sepia(59%) saturate(5786%) hue-rotate(89deg) brightness(129%) contrast(114%);
+}
+.animated-gif-blauw{
+    transition: transform 0.5s ease; /* Voeg een overgangseffect toe op de grootte */
+    cursor: pointer; /* Maak de cursor een wijzer wanneer erop wordt geklikt */
+    transform: scale(2); /* Tweemaal zo groot, standaard geanimeerd */
+    filter: brightness(0) saturate(100%) invert(39%) sepia(52%) saturate(2358%) hue-rotate(182deg) brightness(105%) contrast(104%);
+}
+
+.buttons {
+    width: 62px;
+    height: auto;
+}
+
+/* positie button 1 */
+.button1{
+    position: absolute;
+    top: 35vh;
+    left: 39vw;
+}
+
+/* positie button 2 */
+.button2{
+    position: absolute;
+    top: 104vh;
+    left: 51vw;
+}
+
+/* positie button 3 */
+.button3{
+    position: absolute;
+    top: 87vh;
+    left: 76vw;
+}
+/* positie button 4 */
+.button4{
+    position: absolute;
+    top: 48vh;
+    left: 23vw;
+}
+
+/* positie button 5 */
+.button5{
+    position: absolute;
+    top: 70vh;
+    left: 72vw;
+}
+
+/* positie button 6 */
+.button6 {
+    position: absolute;
+    top: 56vh;
+    left: 24vw;
+}
+
+
+/* positie button 7 */
+.button7{
+    position: absolute;
+    top: 78vh;
+    left: 41vw;
+}
+
+/* positie button 8 */
+.button8{
+    position: absolute;
+    top: 102vh;
+    left: 73vw;
+}
+
+/* positie button 9 */
+.button9 {
+    position: absolute;
+    top: 60vh;
+    left: 34vw;
+}
+
+/* positie button 10 */
+.button10{
+    position: absolute;
+    top: 69vh;
+    left: 40vw;
+}
+/* positie button 11 */
+.button11{
+    position: absolute;
+    top: 104vh;
+    left: 9vw;
+}
+
+/* positie button 12*/
+.button12{
+    position: absolute;
+    top: 81vh;
+    left: 72vw;
+}
+
+/* positie button 13 */
+.button13 {
+    position: absolute;
+    top: 43vh;
+    left: 28vw;
+}
+
+/* positie button 14 */
+.button14{
+    position: absolute;
+    top: 125vh;
+    left: 45vw;
+}
+
+/* positie button 15 */
+.button15{
+    position: absolute;
+    top: 103vh;
+    left: 34vw;
+}
+
+/* positie button 16*/
+.button16{
+    position: absolute;
+    top: 60vh;
+    left: 70vw;
+}
+/* positie button 17*/
+.button17{
+    position: absolute;
+    top: 106vh;
+    left: 24vw;
+}
+
+/* positie button 18*/
+.button18{
+    position: absolute;
+    top: 124vh;
+    left: 62vw;
+}
+/* positie button 19*/
+.button19{
+    position: absolute;
+    top: 70vh;
+    left: 24vw;
+}
+
+/* bovenste rode balk */
+.rodebalktop{
+    background-color: #F9100C;
+    height: 45px;
+}
+
+/* CALM logo */
+.Index-logo img{
+    width: 783px;
+    position: absolute;
+    left: 93px;
+    top: 100px;
+}
+
+/* telefoon logo plaatsen*/
+.red-phone{
+    width: 12vw;
+    margin-top: 1vh;
+    margin-right: 2vw;
+    position: absolute;
+    right: 0;
+}
+
+.makersbutton {
+    font-family: helvetica, serif;
+    font-size: 86px;
+    background-color: #F9100C;
+    border-color: #F9100C;
+    padding: 15px;
+    position: absolute;
+    right: 20.4vw;
+    top: 23.3vh;
+    z-index: 100;
+    display: inline-block;
+    width: 61vw;
+}
+
+
+.Quizbutton {
+    font-family: helvetica, serif;
+    font-size: 86px;
+    background-color: #F9100C;
+    border-color: #F9100C;
+    padding: 15px;
+    position: absolute;
+    z-index: 100;
+    display: inline-block;
+    width: 61vw;
+    right: 20.4vw;
+    top: 31.3vh;
+}
+
+
+
+.Uitlegbutton {
+    font-family: helvetica, serif;
+    font-size: 86px;
+    background-color: #F9100C;
+    border-color: #F9100C;
+    padding: 15px;
+    position: absolute;
+    z-index: 96;
+    display: inline-block;
+    width: 61vw;
+    right: 20.4vw;
+    top: 39.3vh;
+}
+
+/* knop naar quiz-pagina */
+.vierkantlogo.fixed {
+    position: fixed;
+    top: 0;
+    margin-top: 40px;
+    height: auto;
+    width: 12vw;
+    z-index: 999;
+}
+
+
+
+
+/* Voeg deze CSS toe om de Quizbutton op zijn plaats te houden en vervolgens te fixeren bij het scrollen */
+.Quizbutton.fixed {
+    position: fixed;
+    top: 0;
+    right: 250px;
+    margin-top: 40px;
+    width: 50px;
+    font-size: 70px;
+    padding-left: 82px;
+    padding-right: 218px;
+    z-index: 999;
+}
+
+/* knop makers-pagina ná scrollen */
+.Uitlegbutton.fixed{
+    position: fixed;
+    top: 0;
+    left: 32px;
+    margin-top: 40px;
+    width: 380px;
+    font-size: 70px;
+    z-index: 100;
+    display: inline-block;
+}
+
+
+/* titels pagina's */
+.Quiztitel,
+.makerstitel,
+.Uitlegtitel{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* flatgebouw */
+.flatgebouw-content {
+    background-image: url(../images/Achtergrond.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 136vh;
+    margin-top: 1100px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* tekst */
+.intro-tekst {
+    margin-top: 2vh;
+    padding-right: 11vw;
+    padding-left: 5vw;
+}
+
+/* close button intro */
+.Sluiting-wizard{
+    width: 34vw;
+    position: absolute;
+    top: 4vh;
+    left: 91vw;
+}
+/* container */
+.wizard-container-intro {
+    display: none;
+    position: fixed;
+    top: 20vh;
+    z-index: 110;
+}
+
+/* content */
+.wizard-content-intro {
+    color: white;
+    font-family: helvetica, serif;
+    font-size: 5vw;
+}
+
+/*introwizard achtergrond*/
+.testbackground {
+    background-color: rgba(0, 0, 0, 0.73);
+    border-radius: 5%;
+    position: fixed;
+    width: 101vw;
+    max-height: 100%;
+}
+
+/* wizards */
+.wizard-container {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+
+/* content */
+.wizard-content {
+    position: fixed;
+    top: 30%;
+    font-family: helvetica, serif;
+    color: white;
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0.73);
+    border-radius: 5%;
+    z-index: 200;
+}
+
+
+.wizard-content-lang{
+    position: fixed;
+    top: 20%;
+    font-family: helvetica, serif;
+    color: white;
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0.73);
+    border-radius: 5%;
+    z-index: 200;
+}
+
+/* menu waar de wizards in zitten*/
+.wizard-menu{
+    display: flex;
+    justify-content: center;
+}
+
+/* wizard tekst */
+.info-wizard  {
+    font-size: 3.3vw;
+    position: relative;
+    bottom: 0;
+    padding: 2.5vw;
+}
+.info-wizard19{
+        font-size: 3.3vw;
+        position: relative;
+        bottom: 0;
+        padding: 3.5vw;
+        padding-right: 6vw;
+}
+
+/* sluiten van wizard */
+.close-button {
+    font-size: 6vw;
+    position: absolute;
+    left: 93%;
+    font-family: helvetica,serif;
+    top: 5%;
+    z-index: 50;
+}
+
+/* schalen van afbeelding (versie 1) */
+.img-default{
+    margin-top: 2.7vh;
+    width: 51vw;
+    border: solid white 10px;
+}
+
+/* schalen van afbeelding (versie 2) */
+.img-default-2{
+    margin-top: 2.7vh;
+    width: 65vw;
+    border: solid white 10px;
+}
+
+/* afbeeldingen buiten de default marge */
+.img-nondefault{
+    margin-top: 2.7vh;
+    width: 22vw;
+    border: solid white 10px;
+}
+@media screen and (min-width: 500px) and (orientation: landscape) {
+    #home
+    {
+        display:none;
+    }
+    #homeMobiel
+    {
+    display: block;
+    }
+    .Index-logo
+    {
+    min-height: 100px;
+    }
+    .Index-logo img {
+        width: 100px;
+        left: 0;
+        top: 45px;
+    }
+    .red-phone
+    {
+        width: 50px;
+    }
+
+    p{
+        padding: 0 50px;
+        font-size: 30px;
+        text-align: center;
+    }
+}

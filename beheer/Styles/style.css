@@ -1,0 +1,181 @@
+/**
+ * User: Serezo Popelier
+ * Date: 10-6-2023
+ * File: Project
+ */
+
+/* Algemene opmaak */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+/* Navigatiebalk */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    justify-content: space-between;
+    background: #0E85C7;
+    text-decoration: none;
+
+}
+nav a {
+    right: 20px;
+    position: relative;
+}
+h2
+{
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 10px;
+}
+/* Logincontainer */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-container input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #19398a;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-container p.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Overige stijldefinities */
+#LogoBody {
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#Prullenbak {
+    width: 50px;
+    height: 50px;
+}
+
+.flex-container {
+    width: 20%;
+    padding: 10px;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+    font-size: 10px;
+}
+.vraag-container label, vraag-container input {
+    display: block;
+
+}
+.vraag-container input {
+    border-radius: 5px;
+}
+.vraag-container
+{
+    width: 20%;
+    padding: 10px;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+    font-size: 10px;
+}
+#Linkerdiv {
+    width: 200px;
+    position: fixed;
+    left: 0;
+    padding: 20px;
+    background-color: red;
+}
+
+.Image {
+    width: 300px;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #E5F1F9;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 768px)
+{
+    .Image
+    {
+        width: 150px;
+    }
+    .login-container {
+        width: 250px;
+    }
+    .vraag-container {
+        width: auto;
+    }
+    .flex-container
+    {
+        width: auto;
+    }
+    nav a {
+        font-size: 9px;
+        margin: 4px;
+    }
+    nav img
+    {
+        display: none;
+    }
+    nav
+    {
+        padding: 12px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,183 @@
+*
+{
+    margin: 0;
+}
+
+.hidden
+{
+    display: none;
+}
+img
+{
+    width: 100px;
+    height: 100px;
+}
+/*algemeen*/
+main, .questionDiv, #startQuiz, .test
+{
+    display: flex;
+}
+body
+{
+    background-color: white;
+}
+
+body, button
+{
+    font-family: helvetica, serif;
+}
+/*text*/
+h1, .choice
+{
+    color: red;
+}
+h1
+{
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 48px;
+    margin-bottom: 4vh;
+}
+/*layout*/
+
+main
+{
+    flex-direction: column;
+    align-items: center;
+}
+header, footer
+{
+    background-color: red;
+    width: 100vw;
+    height: 27px;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;
+}
+.questionDiv
+{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.question, .awnserExpl, .end
+{
+    padding: 17px;
+    margin:  0 5px 5px 5px;
+    width: 66vw;
+    height: auto;
+    background-color: red;
+    border: 5px solid white;
+    box-shadow: 0 0 0 5px red;
+    color: white;
+}
+.question
+{
+    height: auto;
+    min-height: 200px;
+}
+.choice
+{
+    width: 80vw;
+}
+.test
+{
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    min-height: 40px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]{
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+    margin-left: 30px;
+    right: 21px;
+}
+.labelChoice
+{
+    width: 76%;
+    color: red;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+input[type="radio"]:before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    border: 3px solid red;
+    padding: 10px;
+    top: -5px;
+
+}
+
+input[type="radio"]:checked:before {
+    background-color: red;
+    border-color: red;
+}
+button, .homeLink
+{
+    background-color: red;
+    border: none;
+    padding: 10px;
+    color: white;
+    width: 40vw;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+}
+#startQuiz
+{
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80vw;
+    margin-bottom: 80px;
+}
+.startQuizText
+{
+    padding: 17px;
+    margin: 0 5px 27px 5px;
+    width: 66vw;
+    height: auto;
+    background-color: red;
+    border: 5px solid white;
+    box-shadow: 0 0 0 5px red;
+    color: white;
+    font-size: 24px;
+}
+.awnser
+{
+    font-size: 35px;
+    text-align: center;
+}
+.awnserExpl
+{
+    height: auto;
+}
+.quiz-buttons
+{
+    position: fixed;
+    bottom: 60px;
+    width: 70vw;
+    left: 20vw;
+}
+.end
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+}
+.end-button
+{
+    left: 10vw;
+    text-align: center;
+    width: 75vw;
+}
