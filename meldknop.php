@@ -1,12 +1,28 @@
+<?php
+include ("initialize.php");
+?>
 <!DOCTYPE html>
-   <html lang="nl"> 
-   <!-- Header --> 
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/images/calm.jpg">
+    <meta name="viewport" content="width= device-width, initial-scale-1"/>
+    <title>
+        CALM APP - Koning Willem 1 College
+    </title>
 
-    <?php
-    //Header
-    include("includes/header.php");
-    ?>
-    <body>
+    <!-- Opmaak -->
+    <link rel="stylesheet" href="css/stylesheets.css">
+    <!-- Opmaak -->
+
+    <!--Bootstrap opmaak -->
+    <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
         <div class="rodebalktop">
             </div>
             <!-- Homeknop -->
@@ -25,12 +41,10 @@
             <!-- Algemeen knoppenoverzicht/lijst -->
             <div class="accordion-menu" id="Menu">
             <ul>
-                    <li class="accordion-items">
+            <li class="accordion-items">
                     <!-- s'Hertogenbosch knop (1) -->
-                    <div class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        s'Hertogenbosch
-                    </div>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion-menu">
+                    <div class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >’s-Hertogenbosch</div>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#Menu" >
                         <div class="accordion-body">
                                 <p>J. van Maerlantstraat: </p>
                                 <p><a class="number" href="tel:+06 - 1840 5695">06 - 1840 5695</a></p>
@@ -68,7 +82,7 @@
                     <div class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Rosmalen
                     </div>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-menu">
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#Menu">
                         <div class="accordion-body">
                                 <p>De Kleine Elst: </p>
                                 <p><a class="number" href="tel:+073 - 6456 620">073 - 6456 620</a></p>
@@ -86,7 +100,7 @@
                     <div class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         Cuijk
                     </div>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion-menu">
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#Menu">
                         <div class="accordion-body">
                                 <p>Beversestraat: </p>
                                 <p><a class="number" href="tel:+088 - 017 5555">088 - 017 5555</a></p>
@@ -104,7 +118,7 @@
                     <div class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         Oss
                     </div>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion-menu">
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#Menu">
                         <div class="accordion-body">
                                 <p>Euterpelaan: </p>
                                 <p><a class="number" href="tel:+088 - 017 5555">088 - 017 5555</a></p>
@@ -127,7 +141,7 @@
                     <div class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                         Uden
                     </div>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion-menu">
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#Menu">
                         <div class="accordion-body">
                                 <p>Udenseweg: </p>
                                 <p><a class="number" href="tel:+088 - 017 5555">088 - 017 5555</a></p>
@@ -140,7 +154,7 @@
                     <div class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                         Veghel
                     </div>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion-menu">
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#Menu">
                         <div class="accordion-body">
                                 <p>Muntelaar: </p>
                                 <p><a class="number" href="tel:+088 - 017 5555">088 - 017 5555</a></p>

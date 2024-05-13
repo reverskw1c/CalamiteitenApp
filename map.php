@@ -1,92 +1,18 @@
 <?php
-include("includes/header.php");
 include("includes/footer.php");
 ?>
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <title>Map</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: scroll;
-            display: grid;
-            gap: 10px;
-            /*background-image: url(images/betere_flatgebouw.png);*/
-            /*background-repeat: no-repeat;*/
-            /*background-attachment: scroll;*/
-            /*background-size: 100% auto;*/
-        }
-
-        .buttons {
-            width: 120px;
-            display: block;
-            margin-bottom: 10px;
-            padding: 40px;
-
-            /* Nieuwe toevoeging: */
-            z-index: 2;
-        }
-
-
-        .wizard-container {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .wizard-content {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            position: relative;
-        }
-
-        .close-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-        }
-
-
-        #introductieBox{
-            position: fixed;
-            margin: 50%;
-            transform: translate(-50%, -50%);
-            width: 50%;
-            height: 10%;
-            background: #F9E7E7;
-            border-radius: 10px;
-        }
-
-        .close-button{
-            width: 10%;
-            float: inline-end;
-        }
-
-
-
-        .flatgebouw{
-            background-image: url("images/betere_flatgebouw.png");
-            background-size: cover;  /* of background-size: contain; afhankelijk van het gewenste effect */
-            background-repeat: no-repeat;
-            width: 100vw;
-           max-height: 100%;
-        }
-
-    </style>
+    <title>
+        CALM APP - Koning Willem 1 College
+    </title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/images/calm.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/map.css">
 </head>
 <body>
-
-
-
-
 <!-- Introductiewizard -->
 <div id="introductieBox">
     <div class="titeltekst">

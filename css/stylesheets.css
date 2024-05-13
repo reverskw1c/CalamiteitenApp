@@ -193,7 +193,7 @@
         display: flex;
         align-items: center;
         height: 8.8vh;
-        padding: 1vh 30vw;
+       
         font-size: 5vw;
         font-family: var(--text-font);
         margin: 0 auto;

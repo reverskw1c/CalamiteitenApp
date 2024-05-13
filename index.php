@@ -2,18 +2,18 @@
 <html lang="nl">
 <head>
     <link rel="icon" type="image/x-icon" href="/images/calm.jpg">
-    <!-- titel --> 
-    <title>CALM</title>
+    <!-- titel -->
+    <title>
+        CALM APP - Koning Willem 1 College
+    </title>
+    <meta charset="UTF-8">
+
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/Index.css">
     <script src="scripts/scripts.js" defer></script>
 </head>
-
-
 <body>
-<!--scripts-->
-
-
 <!-- Wizard-venster voor introductie -->
 <div class="wizard-container-intro" id="introWizard">
     <div class="wizard-content-intro">
@@ -37,7 +37,7 @@
 </div>
 
 <!-- rode balk -->
-<header>
+
     <div class="rodebalktop">
     </div>
 
@@ -60,14 +60,13 @@
 
     <!-- knop naar quiz-pagina -->
     <button class="Quizbutton">
-        <a href="quiztest.php" class="Quiztitel">Quiz</a>
+        <a href="quiz.php" class="Quiztitel">Quiz</a>
     </button>
 
     <!-- knop naar wizard -->
     <button id="Uitlegbutton" class="Uitlegbutton">
         <a href="#" class="Uitlegtitel">Introductie</a>
     </button>
-</header>
 
 <!--Flat als achtergrond en buttons-->
 <div class="flatgebouw-content">

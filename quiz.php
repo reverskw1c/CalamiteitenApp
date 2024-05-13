@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <title>
+        CALM APP - Koning Willem 1 College
+    </title>
+
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="/images/calm.jpg">
     <meta name="viewport" content="width= device-width, initial-scale-1"/>
 
     <link rel="stylesheet" href="css/quiz.css">
-    <title>quiztest</title>
 </head>
 
 <body>
@@ -310,7 +313,7 @@
 
                     ${question.options.map((option, i) => `<div class="test">
                         <input type="radio" id="antwoord${i + 1}" name="antwoorden" value="${i + 1}" required>
-                        ${option.type === 'image' ? `<img src="${option.content}"><br>` : `<label class="labelChoice" for="antwoord${i + 1}">${option.content}</label><br></div>`}
+                        ${option.type === 'image' ? `<label for="antwoord${i + 1}"><img src="${option.content}"></label><br>` : `<label class="labelChoice" for="antwoord${i + 1}">${option.content}</label><br></div>`}
                     `).join('')}
 
                 </p>
